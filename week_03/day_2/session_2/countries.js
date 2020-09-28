@@ -1,50 +1,67 @@
-var country = 'Nepal'
+var country = 'Argentinia'
+var continent
 switch(country){
     case 'India':
-    console.log(country= 'The continent is Asia');
-    break;
+        continent = 'The continent is Asia'
+        console.log(continent)
+        break;
     case 'United states of America':
-    console.log(country='The continent is North America')
-    break;
+        continent = 'The continent is North America'
+        console.log(continent)
+        break;
     case 'China':
-    console.log(country='The continent is Asia')
-    break;
+        continent = 'The continent is Asia'
+        console.log(continent)
+        break;
     case 'Nepal':
-    console.log(country='The continent is Asia')
-    break;
+        continent = 'The continent is Asia'
+        console.log(continent)
+        break;
     case 'Australia':
-   console.log(country='The continent is Oceania')
-    break;
+        continent = 'The continent is Oceania'
+        console.log(continent)
+        break;
     case 'France':
-   console.log(country='The continent is Europe')
-    break;
-    case Germany:
-    console.log(country='The continent is Europe')
-    break;
+        continent = 'The continent is Europe'
+        console.log(continent)
+        break;
+    case 'Germany':
+        continent = 'The continent is Europe'
+        console.log(continent)
+        break;
     case 'SouthAfrica':
-    console.log(country='The continent is Africa')
-    break;
+        continent = 'The continent is Africa'
+        console.log(continent)
+        break;
     case 'Nigeria':
-    console.log(country='The continent is Africa')
-    break;
+        continent = 'The continent is Africa'
+        console.log(continent)
+        break;
     case 'Mexico':
-    console.log(country='The continent is North America')
-    break;
+        continent = 'The continent is North America'
+        console.log(continent)
+        break;
     case 'Argentinia':
-    console.log(country='The continent is South America')
-    break;
+        continent = 'The continent is South America'
+        console.log(continent)
+        break;
     case 'Brazil':
-    console.log(country='The continent is South America')
-    break;
+        continent = 'The continent is South America'
+        console.log(continent)
+        break;
     case 'Canada':
-    console.log(country='The continent is North America')
-    break;
+        continent = 'The continent is North America'
+        console.log(continent)
+        break;
     case 'Singapore':
-    console.log(country='The continent is Asia')
-    break;
+        continent = 'The continent is Asia'
+        console.log(continent)
+        break;
     case 'Sweden':
-    console.log(country='The continent is Europe')    
+        continent = 'The continent is Europe'
+        console.log(continent)    
+        break;
     default:
-   console.log(country='The continent is antarctica')
-
+        continent = 'Invalid continent'
+        console.log(continent)
 }
