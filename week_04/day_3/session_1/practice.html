@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="demo">JavaScript</h1>
+  <button onclick="changeText()">Change to Masai</button> 
+  <button onclick="changeOriginal()">Change to Javascript</button> 
+  <script>
+  function changeText(){
+  document.getElementById("demo").innerHTML = "MASAI SCHOOL";
+  document.getElementById("demo").style.fontSize= '50px'
+  document.getElementById("demo").style="color:green;background:blue;float:right;";
+}
+
+function changeOriginal(){
+  document.getElementById("demo").innerHTML = "masai";
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.fontSize="50px;"
+}
+  </script>
+</body>
+</html>
