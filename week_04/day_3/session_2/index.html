@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+
+<body>
+    <div>
+        <h1>Driving License Checker</h1>
+        <input type="number" id='ageval' placeholder='Please Enter Your age'>
+        <button onclick='ageChecker()'>Submit</button>
+        <h2 id='res'></h2>
+    </div>
+
+    <script>
+        function ageChecker() {
+            var age = document.getElementById('ageval').value;
+            var result
+            if (age > 18) {
+                result = 'You can drive in India !'
+            }
+            else if (age < 18) {
+                result = "You can't drive in India !"
+            }
+            else {
+                result = "You are just old enough to drive in India !"
+            }
+            document.getElementById('res').innerHTML = result
+            document.getElementById('res').style.color = 'red'
+        }
+    </script>
+</body>
+
+</html>

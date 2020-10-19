@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Countries With Their Respective Continents</h1>
+    <select id="countries" style="background-color: blanchedalmond;padding: 15px;font-style: italic;font-size: large;">
+        <option value="--">Select Country</option>
+        <option value="India">India</option>
+        <option value="United States Of America">U.S.A</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Australia">Australia</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="South africa">South Africa</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Sweden">Sweden</option>
+    </select>
+    <button onclick="continent()" style="padding: 18px;font-weight: bold;font-family: cursive;">Find the
+        Continent</button>
+    <h3 id="continent"></h3>
+    <script>
+        function continent() {
+            var country = document.getElementById('countries').value
+            var continent
+            switch (country) {
+                case 'India':
+                    continent = 'Asia'
+                    break;
+                case 'United States Of America':
+                    continent = 'North america'
+                    break;
+                case 'China':
+                    continent = 'Asia'
+                    break;
+                case 'Nepal':
+                    continent = 'Asia'
+                    break;
+                case 'Australia':
+                    continent = 'oceania'
+                    break;
+                case 'France':
+                    continent = 'Europe'
+                    break;
+                case 'Germany':
+                    continent = 'Europe'
+                    break;
+                case 'South Africa':
+                    continent = 'Africa'
+                    break;
+                case 'Nigeria':
+                    continent = 'Africa'
+                    break;
+                case 'Mexico':
+                    continent = 'North Amrica'
+                    break;
+                case 'Argentina':
+                    continent = 'South America'
+                    break;
+                case 'Brazil':
+                    continent = 'South America'
+                    break;
+                case 'Canada':
+                    continent = 'North America'
+                    break;
+                case 'Singapore':
+                    continent = 'Asia'
+                    break
+                case 'Sweden':
+                    continent = 'Europe'
+                    break;
+                default:
+                    continent = 'Invalid continent'
+                    break;
+            }
+            document.getElementById('continent').innerHTML = 'The Continent is ' + continent
+            document.getElementById('countries').value = '--'
+        }
+    </script>
+</body>
+
+</html>

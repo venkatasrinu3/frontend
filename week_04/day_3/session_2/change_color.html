@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="colorcng()" id="color">Click here to change my color</button>
+    <select id = 'sample' onchange="smpl()">
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+        <option value="orange">orange</option>
+    </select>
+    <h3 id="res"></h3>
+    <script>
+        document.getElementById('res').innerHTML='this is how the color will  change' 
+        function smpl(){
+        var Text = document.getElementById('res').style.color = document.getElementById('sample').value
+        }
+        function colorcng(){
+        document.getElementById('color').style.color= document.getElementById('res').style.color
+        }
+    </script>
+
+</body>
+</html>
