@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="chng_clr">
+    <script>
+        var body = document.getElementById("chng_clr")
+        function random(number){
+            return Math.floor(Math.random()*number)
+        }
+        function switch_color(){
+            var color_chng = 'rgb('+random(255)+','+random(255)+','+random(255)+')'
+            body.style.background= color_chng
+        }
+        window.addEventListener('resize',switch_color)
+    </script>
+</body>
+</html>

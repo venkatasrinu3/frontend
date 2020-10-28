@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <!-- FSD.JS.10.1 !-->
+  <h1>Change the buttons text color random value</h1>
+  <button id="chng_clr">Click here to change my color</button>
+
+  <!-- FSD.JS.10.2 !-->
+  <h1>My color should change when I double click the button!</h1>
+  <button id="chng_bgrnd">Double Click here to change the color of the h1 tag !</button>
+
+  <!-- FSD.JS.10.3 !-->
+  <h1>The buttons color changes to a random value when it is clicked! But only two times!</h1>
+  <button id="twice">Click here to change my color!</button>
+  <script>
+    // <!-- FSD.JS.10.1 !-->
+    var clr = document.getElementById("chng_clr")
+    function random(number) {
+      return Math.floor(Math.random() * number)
+    }
+    function switchcolor() {
+      var random_color = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'
+      clr.style.color = random_color
+    }
+    clr.addEventListener('click', switchcolor)
+    // <!-- FSD.JS.10.2 !-->
+    var bgrnd = document.getElementById("chng_bgrnd")
+    function swicthbgrnd() {
+      var bgrnd_color = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'
+      bgrnd.style.background = bgrnd_color
+    }
+    bgrnd.addEventListener('dblclick', swicthbgrnd)
+    // <!-- FSD.JS.10.3 !-->
+    var twice_clr = document.getElementById("twice")
+    var cnt = 0
+    function chng_twice() {
+      var twice_color = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'
+      twice_clr.style.background = twice_color
+      cnt++
+      if (cnt > 1) {
+        twice_clr.removeEventListener('click', chng_twice)
+      }
+    }
+    twice_clr.addEventListener('click', chng_twice)
+  </script>
+</body>
+
+</html>

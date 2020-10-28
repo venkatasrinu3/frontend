@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 750px;height: 500px;background-color: cadetblue;" id="enter_div">
+    <button id="chng" style="padding: 40px;font-size: 20px;">submit</button>
+    </div>
+    <button id="old">click to reset</button>
+    <script>
+        var btn = document.getElementById("chng")
+        var layout = document.getElementById("enter_div")
+        var reset = document.getElementById('old') 
+        function chng_clr(){
+            btn.style.background="red"  
+        }
+        function anthr_clr(){
+            btn.style.background="green"
+        }
+        function return_back(){
+            btn.style.background = ""
+        }
+        layout.addEventListener('mouseover',chng_clr)
+        layout.addEventListener('mouseout',anthr_clr)
+        reset.addEventListener('click',return_back)
+    </script>
+</body>
+</html>
