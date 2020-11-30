@@ -1,0 +1,40 @@
+body{
+    background-color: indigo;
+}
+.main{
+    width: 400px;
+    height: 710px;
+    margin-top: 150px;
+    margin-left: 300px;
+    background-color: rgb(50, 9, 80);
+}
+.img{
+margin-top: 20px;
+margin-left: 25%;
+height: 200px;
+width: 200px;
+border: 2px solid rgb(15, 152, 197);
+}
+.photo{
+height: 190px;
+margin-top: 3px;
+margin-left: 3px;
+width: 190px;
+}
+.foot{
+    background-color: rgb(35, 3, 58);
+    margin-top: 40px;
+}
+h5{
+    color: rgb(199, 173, 173);
+}
+p{
+    color: thistle;
+}
+.row{
+    color: thistle;
+}
+.tag{
+    width: fit-content;
+    border-radius: 5px;
+}
