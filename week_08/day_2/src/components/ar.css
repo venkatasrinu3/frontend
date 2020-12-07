@@ -1,0 +1,17 @@
+.rate{
+    max-width: fit-content;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.order{
+    background-color: rgb(223, 240, 223);
+    color: green;
+}
+.vote{
+    clear: right;
+    float: right;
+}
+.review{
+    clear: right;
+    float: right;
+}
