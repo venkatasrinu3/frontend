@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="expense.css">
+</head>
+
+<body class="bdy">
+    <!---------------Heading--------------------->
+    <div class="header">
+        Monthly Expense Manager
+    </div>
+    <hr>
+    <!------------output Section----------------->
+    <div class="output">
+        <p id="inc_amount"></p>
+        <p id="exp_amount"></p>
+        <h3 id="bal_amount"></h3>
+    </div>
+    <!------------Input Section------------------>
+    <div class="flex-box">
+        <div class="grid-box1">
+            <div class="sub1">Income List</div>
+            <div>Salary: </div>
+            <div><input type="number" id="sal" placeholder="Enter salary amount"></div>
+            <div>Other Sources: </div>
+            <div><input type="number" id="other" placeholder="Enter amount By Other source"></div>
+        </div>
+        <div class="grid-box2">
+            <div class="sub2">Expenditure List</div>
+            <div>Grocery: </div>
+            <div><input type="number" id="groc" placeholder="Enter Grocery Expenses"></div>
+            <div>Electricity: </div>
+            <div><input type="number" id="elect" placeholder="Enter Electricity Expenses"></div>
+            <div>Travelling: </div>
+            <div><input type="number" id="trav" placeholder="Enter Teavelling Expenses"></div>
+            <div>Food: </div>
+            <div><input type="number" id="food" placeholder="Enter Food Expenses"></div>
+            <div>Miscellaneous:</div>
+            <div><input type="number" id="misc" placeholder="Enter Misc. Expenses"></div>
+        </div>
+    </div>
+    <button id="btn1" onclick="expense_manag()">Submit</button>
+    <button id="btn2" onclick="reset_data()">Reset</button>
+    <script src="expense.js"></script>
+</body>
+
+</html>

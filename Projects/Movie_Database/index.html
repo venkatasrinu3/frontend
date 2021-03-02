@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <title>Moviedb</title>
+</head>
+
+<body>
+   <div class="container-fluid jumbotron-fluid bg-secondary text-light p-0 backimg">
+      <h1 class="text-center py-2 font-weight-light">WELCOME TO THE MOVIE WORLD</h1>
+      <div class="form-group text-center">
+         <input type="text" class="form-control-lg col-8 col-md-6 col-lg-4 mb-3" id="movieSearch"
+            placeholder="Search by Movie Name ..." />
+         <button class="btn btn-lg bg-dark text-light mb-1" id="btn">Search</button>
+         <button class="btn btn-lg bg-danger text-light mb-1 px-3" id="reset">Reset</button>
+      </div>
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img class="d-block w-100 size" src="https://wallpapercave.com/wp/vTucv7p.jpg" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100 size" src="https://wallpapercave.com/wp/0UrUzt4.jpg" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100 size" src="https://wallpapercave.com/wp/V3zePuM.jpg" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100 size"
+                  src="https://images.wallpapersden.com/image/download/joker-2019-movie_66632_1920x1080.jpg"
+                  alt="Fourth slide" />
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100 size"
+                  src="https://www.bollywoodhungama.com/wp-content/uploads/2019/08/War-01-3.jpg" alt="Fifth slide" />
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100 size" src="https://cdn.wallpapersafari.com/40/20/7ICBGd.jpg"
+                  alt="Sixth slide" />
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid my-5 px-5">
+      <div class="row">
+         <div class="col-10 offset-1 offset-md-0 col-md-4 col-lg-2 mb-2">
+            <div class="card border-0">
+               <img src="https://wallpaperplay.com/walls/full/c/f/9/188893.jpg" class="img-fluid zoom img-thumbnail">
+            </div>
+         </div>
+         <div class="col-10 offset-1 offset-md-0 col-md-4 col-lg-2 mb-2">
+            <div class="card border-0">
+               <img
+                  src="https://s2.best-wallpaper.net/wallpaper/2560x1440/1604/Direct-Ishq-2016-Indian-movie_2560x1440.jpg"
+                  class="img-fluid zoom img-thumbnail">
+            </div>
+         </div>
+         <div class="col-10 offset-1 offset-md-0 col-md-4 col-lg-2 mb-2">
+            <div class="card border-0">
+               <img src="https://i.pinimg.com/originals/fb/b1/f0/fbb1f0b8fb20c94ea924548fd07114e6.jpg"
+                  class="img-fluid zoom img-thumbnail">
+            </div>
+         </div>
+         <div class="col-10 offset-1 offset-md-0 col-md-4 col-lg-2 mb-2">
+            <div class="card border-0">
+               <img src="https://www.godigitalzone.in/wp-content/uploads/2019/10/moviescounter-hd-2.jpg"
+                  class="img-fluid zoom img-thumbnail">
+            </div>
+         </div>
+         <div class="col-10 offset-1 offset-md-0 col-md-4 col-lg-2 mb-2">
+            <div class="card border-0">
+               <img
+                  src="https://lh5.googleusercontent.com/proxy/66vOZ-YPsYznwC2kvLRj5EaRxRT6XthLnZ5_SDpoRMxJrnN_7JyIvZvpdRkixiFsatJZqcXKaBzz3liG9JIF3t2MG15JoJL4ZxrZfXg2ag=s0-d"
+                  class="img-fluid zoom img-thumbnail">
+            </div>
+         </div>
+         <div class="col-10 offset-1 offset-md-0 col-md-4 col-lg-2 mb-2">
+            <div class="card border-0">
+               <img
+                  src="https://c4.wallpaperflare.com/wallpaper/194/620/840/movies-bollywood-movies-wallpaper-preview.jpg"
+                  class="img-fluid zoom img-thumbnail">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div id="display" class="d-flex flex-wrap"></div>
+   <div id="tabledata"></div>
+
+   <div class="container-fluid bg-secondary py-3">
+      <hr>
+      <ul class="nav justify-content-center">
+         <li class="nav-item">
+            <a class="nav-link text-light" href="#">Contact Us</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link text-warning" href="#">@ All rights reserved </a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/f90b59850b.js" crossorigin="anonymous"></script>
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+   <script src="index.js"></script>
+</body>
+
+</html>

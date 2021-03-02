@@ -1,0 +1,38 @@
+.size {
+    max-height: 650px;
+ }
+
+ .cardimg {
+    height: 500px;
+ }
+
+ .zoom:hover {
+    transform: scale(1.1)
+ }
+
+ .zoom {
+    width: 250px;
+    height: 300px;
+ }
+
+ .backimg {
+    background-image: linear-gradient(to right, rgb(43, 102, 252), rgb(70, 207, 190));
+ }
+
+ .cardborder {
+    border: 5px solid rgb(251,184,42);
+ }
+
+ .shadow {
+    box-shadow: 10px 10px rgb(227,218,219);
+ }
+
+ .cardHead {
+   border: 2px solid white;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   border-radius: 40px 20px;
+   text-shadow: 1px 1px gray;
+   margin-top:5px;
+ }
